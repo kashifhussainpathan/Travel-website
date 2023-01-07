@@ -8,7 +8,60 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
 }
+
+:root {
+    font-size: 62.5%;
+    --color-primary: #f4f4f4;
+    --color-secondary: #333;
+    --color-tertiry: #555555;
+    --color-red: #e63946;
+}
+
+/* Utility Classes */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading {
+    font-size: 3.5rem;
+}
+
+.md-heading {
+    font-size: 2.2rem;
+}
+
+/* Utility Classes end */
+
+
+/* HTML element styling */
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+/* Header styling */
 
 .header {
     height: 95vh;
@@ -16,4 +69,47 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.header .navbar .logo {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.header .nav-item {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.navbar {
+    /* border: 2px solid white; */
+    padding: 1rem;
+}
+
+.logo {
+    float: left;
+}
+
+.nav-items {
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: var(--color-primary);
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+.navbar a:hover{
+    border-bottom: 1px solid white;
 }
